@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue Oct 28 14:03:25 UTC 2025 - Stefan Hundhammer <shundhammer@suse.com>
+
+- Use a longer ZYPP_LOCK_TIMEOUT (30 sec * 5) in YaST2-Second-Stage.service
+  to allow the purge-kernels.service to finish before trying to
+  obtain the libzypp lock (bsc#1249643)
+- 4.7.4
+
+-------------------------------------------------------------------
 Tue Dec 17 15:56:21 UTC 2024 - Josef Reidinger <jreidinger@suse.com>
 
 - skip showing reboot message in autoinstallation and
