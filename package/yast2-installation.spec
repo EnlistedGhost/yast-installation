@@ -16,7 +16,7 @@
 #
 
 Name:           yast2-installation
-Version:        5.0.19
+Version:        5.0.20
 Release:        0
 Summary:        YaST2 - Installation Parts
 License:        GPL-2.0-only
@@ -26,7 +26,6 @@ Source0:        %{name}-%{version}.tar.bz2
 Source1:        YaST2-Second-Stage.service
 Source2:        YaST2-Firstboot.service
 
-BuildRequires:  update-desktop-files
 # Kernel: Use is_zvm from Yast::Arch
 BuildRequires:  yast2 >= 5.0.5
 # systemd-boot kernel parameters
