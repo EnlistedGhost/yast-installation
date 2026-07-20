@@ -16,7 +16,7 @@
 #
 
 Name:           yast2-installation
-Version:        5.0.20
+Version:        5.0.21
 Release:        0
 Summary:        YaST2 - Installation Parts
 License:        GPL-2.0-only
@@ -143,10 +143,6 @@ System installation code as present on installation media.
 %install
 %yast_install
 %yast_metainfo
-
-for f in `find %{buildroot}%{_datadir}/autoinstall/modules -name "*.desktop"`; do
-    %suse_update_desktop_file $f
-done
 
 mkdir -p %{buildroot}%{yast_vardir}/hooks/installation
 mkdir -p %{buildroot}%{yast_ystartupdir}/startup/hooks/preFirstCall
